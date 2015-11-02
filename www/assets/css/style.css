@@ -1,152 +1,671 @@
-/* Mel colors */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000319}}
-body {
-  background-color: #6d6e71;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0;
-  font-family: "Trade Gothic LT Std";
-  color: #ffffff;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_box-sizing\.scss}line{font-family:\000034}}
+html {
+  box-sizing: border-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000333}}
-body img {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_box-sizing\.scss}line{font-family:\000039}}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_buttons\.scss}line{font-family:\000031}}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #477dca;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000321}}
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #3964a2;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000327}}
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000331}}
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+  background-color: #477dca;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\000031}}
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\000038}}
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000316}}
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000320}}
+label.required::after {
+  content: "*";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000324}}
+label abbr {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000329}}
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple=multiple] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000343}}
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+select[multiple=multiple]:hover {
+  border-color: #b1b1b1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000347}}
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+select[multiple=multiple]:focus {
+  border-color: #477dca;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000353}}
+input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+select[multiple=multiple]:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000357}}
+input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+select[multiple=multiple]:disabled:hover {
+  border: 1px solid #ddd;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000363}}
+textarea {
+  resize: vertical;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000367}}
+input[type="search"] {
+  appearance: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000371}}
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000376}}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000381}}
+input[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000386}}
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_lists\.scss}line{font-family:\000031}}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_lists\.scss}line{font-family:\0000320}}
+dl {
+  margin-bottom: 0.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_lists\.scss}line{font-family:\0000323}}
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_lists\.scss}line{font-family:\0000328}}
+dl dd {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_tables\.scss}line{font-family:\000031}}
+table {
+  border-collapse: collapse;
+  font-feature-settings: "kern", "liga", "tnum";
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_tables\.scss}line{font-family:\000039}}
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_tables\.scss}line{font-family:\0000316}}
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_tables\.scss}line{font-family:\0000321}}
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_typography\.scss}line{font-family:\000031}}
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_typography\.scss}line{font-family:\000039}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000321}}
+p {
+  margin: 0 0 0.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000325}}
+a {
+  color: #477dca;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000330}}
+a:active, a:focus, a:hover {
+  color: #355e98;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000337}}
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000345}}
+img,
+picture {
+  margin: 0;
   max-width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000337}}
-body h1, body h2, body h3, body h4, body h5 {
-  margin-top: 0;
+
+/* Mel branding settings */
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #cbe7d3;
+  }
+  50% {
+    background-color: #85c798;
+  }
+  100% {
+    background-color: #cbe7d3;
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000341}}
-body h2 {
-  font-size: 48px;
-  line-height: 58px;
+@-moz-keyframes pulse {
+  0% {
+    background-color: #cbe7d3;
+  }
+  50% {
+    background-color: #85c798;
+  }
+  100% {
+    background-color: #cbe7d3;
+  }
+}
+@keyframes pulse {
+  0% {
+    background-color: #cbe7d3;
+  }
+  50% {
+    background-color: #85c798;
+  }
+  100% {
+    background-color: #cbe7d3;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000324}}
+body {
+  font-family: "Trade Gothic LT Std";
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #6d6e71;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000324}}
+  body {
+    font-size: 12px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000334}}
+  body p {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000324}}
+  body {
+    font-size: 14px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000340}}
+  body p {
+    font-size: 1.4em;
+  }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000347}}
-#background {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000346}}
+h1, h2, h3, h4, h5 {
+  color: #ffffff;
+  font-family: "Trade Gothic LT Std";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000357}}
-#container {
-  max-width: 820px;
-  width: 100%;
-  margin: 100px auto 0 auto;
-  padding: 0 25px;
-  box-sizing: border-box;
-  height: 2000px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000351}}
+h1 {
+  font-size: 3.998em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000366}}
-#sidebar {
-  max-width: 250px;
-  width: 100%;
-  float: left;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000355}}
+h2 {
+  font-size: 2.827em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000370}}
-#sidebar #logo {
-  margin: 0;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000359}}
+h3 {
+  font-size: 1.999em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000372}}
-#sidebar #logo a {
-  -webkit-transition: opacity 0.5s ease-out;
-  -moz-transition: opacity 0.5s ease-out;
-  -ms-transition: opacity 0.5s ease-out;
-  -o-transition: opacity 0.5s ease-out;
-  transition: opacity 0.5s ease-out;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000363}}
+h4 {
+  font-size: 1.414em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000374}}
-#sidebar #logo a:hover {
-  opacity: .5;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000367}}
+h5 {
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000371}}
+a {
+  color: #ffffff;
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000375}}
+a:hover {
+  opacity: .8;
+  color: #EFEFEF;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000381}}
-#contents {
-  max-width: 495px;
-  width: 100%;
-  float: left;
+#body-wrapper {
+  background-color: rgba(0, 0, 0, 0.33);
+  background-image: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0.33) 500px);
+  background-image: linear-gradient(to top,black, rgba(0, 0, 0, 0.33) 500px);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000388}}
-form input {
-  display: block;
-  float: left;
-  border: 0;
-  padding: 15px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000385}}
+#content-wrapper {
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000385}}
+  #content-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000395}}
+.align-center {
   text-align: center;
-  font-size: 18px;
-  line-height: 23px;
-  padding-bottom: 8px;
-  padding-top: 12px;
-  outline-width: 6px;
-  outline-color: #3b3b3d;
-  outline-offset: -1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\0000399}}
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000320}}
+section::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003102}}
-form #email-field {
-  background-color: #fffac1;
-  color: #6d6e71;
-  width: 220px;
+section aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003107}}
-form #submit-button {
-  background-color: #6d6e71;
-  color: #ffffff;
-  font-weight: bold;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+section aside:last-child {
+  margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003111}}
-form #submit-button:hover {
-  background-color: #3b3b3d;
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003102}}
+  section aside {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+  section aside:last-child {
+    margin-right: 0;
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003115}}
-form ::-webkit-input-placeholder {
-  font-style: italic;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003109}}
+section article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 8.5298%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003119}}
-form :-moz-placeholder {
-  /* Firefox 18- */
-  font-style: italic;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+section article:last-child {
+  margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003123}}
-form ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-style: italic;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003127}}
-form :-ms-input-placeholder {
-  font-style: italic;
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003109}}
+  section article {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+  section article:last-child {
+    margin-right: 0;
+  }
 }
 
-@media (min-width: 900px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003133}}
-  #container {
-    max-width: 920px;
-    margin-top: 180px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003121}}
+#hero #hero-logo img {
+  width: 200px;
+}
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003120}}
+  #hero #hero-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003128}}
+  #hero #hero-logo img {
+    max-width: 100%;
+    width: 120px;
   }
 }
-@media (min-width: 601px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003140}}
-  #sidebar {
-    margin-right: 125px;
+@media screen and (max-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003135}}
+  #hero article {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 67.77311%;
+    margin-left: 5.37115%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+  #hero article:last-child {
+    margin-right: 0;
   }
 }
-@media (max-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003146}}
-  #sidebar {
-    max-width: 160px;
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003141}}
+  #hero article {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 120px;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+  #hero article:last-child {
+    margin-right: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003149}}
+#hero #signup-form input {
+  display: block;
+  float: left;
+  border-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003154}}
+#hero #signup-form #email {
+  width: 80%;
+  max-width: 300px;
+  padding: 8px;
+  padding-top: 9px;
+  font-family: "Arial", "sans-serif";
+  font-size: 18px;
+  text-align: center;
+  background-color: #fffac1;
+  border-color: #fffac1;
+  color: #6d6e71;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/bourbon\/css3\/_placeholder\.scss}line{font-family:\000034}}
+#hero #signup-form #email::-webkit-input-placeholder {
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/bourbon\/css3\/_placeholder\.scss}line{font-family:\000034}}
+#hero #signup-form #email::-moz-placeholder {
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/bourbon\/css3\/_placeholder\.scss}line{font-family:\000034}}
+#hero #signup-form #email:-moz-placeholder {
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/bourbon\/css3\/_placeholder\.scss}line{font-family:\000034}}
+#hero #signup-form #email:-ms-input-placeholder {
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003166}}
+#hero #signup-form #email:hover, #hero #signup-form #email:active {
+  border-color: #c1b100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003170}}
+#hero #signup-form #signup-response {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003173}}
+#hero #signup-form #submit-button {
+  background-color: #6d6e71;
+  font-family: "Trade Gothic LT Std";
+  font-size: 18px;
+  height: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003178}}
+#hero #signup-form #submit-button:active {
+  background-color: #3b3b3d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003181}}
+#hero #signup-form #submit-button:hover {
+  background-color: #cbe7d3;
+  color: #6d6e71;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003185}}
+#hero #signup-form #submit-button.sending {
+  -webkit-animation: pulse 1.5s infinite;
+  -moz-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003192}}
+#archives {
+  margin-top: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003196}}
+#archives time a {
+  color: #EEEEEE;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003198}}
+#archives time a:hover {
+  color: #CCCCCC;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003209}}
+#editors-note {
+  margin-top: 150px;
+  padding-bottom: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003212}}
+#editors-note article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 8.5298%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+#editors-note article:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003209}}
+  #editors-note {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003216}}
+  #editors-note article {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000389}}
+  #editors-note article:last-child {
+    margin-right: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003223}}
+#social-media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003229}}
+#social-media .social-icon {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003231}}
+#social-media .social-icon a {
+  padding: 10px;
+  min-width: 50px;
+  display: block;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003237}}
+#social-media .social-icon img {
+  height: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003242}}
+#social-media .twitter-icon img {
+  max-height: 23px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+
+/* max body height helpers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003250}}
+* {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003253}}
+html, body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003256}}
+#body-wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cbodkin\/Mel\/site\/www\/assets\/scss\/style\.scss}line{font-family:\00003261}}
+#body-wrapper:after {
+  content: "";
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,24 +3,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    watch: {
-      options: {
-        livereload: true,
-      },
-      grunt: {
-        files: ['GruntFile.js'],
-        options:{
-          livereload: true
-        }
-      },
-      sass: {
-        files: ['www/assets/scss/**/*.scss'],
-        tasks: ['sass'],
-        options:{
-          livereload: true
-        }
-      },
-    },
     connect: {
       server: {
         options: {
@@ -46,13 +28,37 @@ module.exports = function(grunt) {
           ext: '.css',
         }]
       }
-    }
+    },
+    watch: {
+      options: {
+        livereload: true,
+      },
+      grunt: {
+        files: ['Gruntfile.js'],
+        options:{
+          livereload: true
+        }
+      },
+      html: {
+        files: ['**/*.html'],
+        options:{
+          livereload: true
+        }
+      },
+      sass: {
+        files: '**/*.scss',
+        tasks: ['sass:dist'],
+        options:{
+          livereload: true
+        }
+      },
+    },  
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', [ 'sass', 'connect', 'watch', ]);
+  grunt.registerTask('serve', [ 'connect', 'watch', 'sass:dist' ]);
 
 };

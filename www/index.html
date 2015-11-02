@@ -1,32 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Action">
 <head>
+
+	<!-- Title for browser, g+, twitter, facebook -->
+	<title>Mel</title>
+	<meta itemprop="name" content="Mel">
+	<meta name="twitter:title" content="Mel">
+	<meta property="og:site_name" content="Mel" />
+	<meta property="og:title" content="Mel" />
+
+	<!-- Description for crawlers, g+, twitter, facebook -->
+	<meta name="description" content="Sign up for first-look articles and features from Mel sent to your inbox" />
+	<meta itemprop="description" content="Sign up for first-look articles and features from Mel sent to your inbox">
+	<meta name="twitter:description" content="Sign up for first-look articles and features from Mel sent to your inbox">
+	<meta property="og:description" content="Sign up for first-look articles and features from Mel sent to your inbox" />
+
+	<!-- Images for g+, twitter, facebook -->
+	<meta itemprop="image" content="assets/img/share-images/google-plus.png">
+	<meta name="twitter:image:src" content="assets/img/share-images/twitter.png">
+	<meta property="og:image" content="assets/img/share-images/facebook.png" />
+
+	<!-- Misc social options -->
+	<meta property="og:type" content="website" />
+	<meta name="twitter:card" content="summary_large_image">
+	<!-- <meta name="twitter:site" content="@publisher_handle"> -->
+	<!-- <meta property="og:url" content="http://www.example.com/" /> -->
+	<!-- <meta property="fb:admins" content="Facebook numberic ID" /> -->
+
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body id="landing-page" class="mel-base">
-<div id="background">
-	<div id="container">
-		<div id="sidebar">
-			<h1 id="logo">
-				<a href='#'>
-					<img src="assets/img/logo.svg"
-						data-fallback="assets/img/logo.png"
-						alt="Mel">
-				</a>
-			</h1>
+<div id="body-wrapper">
+	<div id="social-media">
+		<div class="facebook-icon social-icon" onclick="console.log('open fb widget');">
+			<a href='https://www.facebook.com/DollarShaveClub' target="_blank"><img src="assets/img/social/facebook.svg" data-fallback="assets/img/social/facebook.png" alt="Share Mel on Facebook"></a>
 		</div>
-		<div id="contents">
-			<h2>Get first-look articles and features from Mel sent to your inbox</h2>
-			<form>
-				<input id="email-field" type="email" placeholder="email.address@gmail.com">
-				<input id="submit-button" type="submit" value="SIGN UP">
-			</form>
+		<div class="twitter-icon social-icon" onclick="console.log('open twitter widget');">
+			<a href='https://twitter.com/DollarShaveClub' target="_blank"><img src="assets/img/social/twitter.svg" data-fallback="assets/img/social/twitter.png" alt="Share Mel on Twitter"></a>
 		</div>
 	</div>
+	<div id="content-wrapper">
+		<section id="hero">
+			<aside id="hero-logo">
+				<h1 id="logo"><a href='#'><img src="assets/img/logo.svg" data-fallback="assets/img/logo.png" alt="Mel"></a></h1>
+			</aside>
+			<article id="hero-contents">
+				<h2>Get first-look articles and features from Mel sent to your inbox</h2>
+				<form id="signup-form">
+					<input name="email" id="email" type="email" placeholder="email.address@gmail.com">
+					<input id="submit-button" type="submit" value="SIGN UP">
+					<div id="signup-response"><p>Response</p></div>
+				</form>
+			</article>
+		</section>
+		<section id="archives">
+			<aside>&nbsp;</aside>
+			<article id="archive-contents">
+				<h4>RECENT</h4>
+				<ul id="archive-list">
+					<li><time datetime="2001-05-15 19:00"><a href="#">May 15</a></time><h3><a href="#">Article hed</a></h3></li>
+				</ul>
+			</article>
+		</section>
+		<section id="editors-note">
+			<article id="editors-note-contents">
+				<h4>EDITORS' NOTE</h4>
+				<p>Dear Reader,</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis tellus tempus, mattis libero ut, commodo quam. Mauris quis turpis ac justo ultricies consectetur sit amet at mauris. Suspendisse ullamcorper, nisi vitae dignissim efficitur, metus diam condimentum nulla, ut fringilla sem risus nec mi. Aliquam tristique tristique velit, a viverra erat consequat quis. Suspendisse cursus quis sem ac faucibus. Quisque eget eros enim. Aenean tincidunt lorem sollicitudin urna accumsan pellentesque. Vestibulum sit amet velit mattis, ultrices risus interdum, pellentesque quam. Cras eget iaculis justo.</p>
+				<p>Thanks, <br />Editor</p>
+			</article>
+		</section>
+	</div>
 </div>
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
